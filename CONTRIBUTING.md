@@ -48,7 +48,7 @@ So, before you jump right into your code editor and start working on your projec
   > |       |   ├── update_contributors_log.py
   > |       |   └── update_index_md.py
   > |       └── workflows
-  > |           ├── C-CPP-linter.yml
+  > |           ├── c-cpp-linter.yml
   > |           ├── deploy-gh-pages.yml
   > |           └── update-contributors-details.yml
   > ├── _includes
