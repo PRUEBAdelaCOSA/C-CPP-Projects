@@ -4,6 +4,7 @@ on:
   pull_request:
     branches: [main]
     paths: ['**.c', '**.cpp', '**.h', '**.hpp', '**.cc', '**.hh', '**.cxx', '**.hxx']
+  workflow_call:
 
 jobs:
   c-cpp-linter:
