@@ -28,7 +28,7 @@ To compile and run the game, follow these steps:
 
 1. Compile the code using a C++ compiler like g++:
    ```bash
-   g++ -o snake snake.cpp
+   g++ -o snake Hungry_Serpent.cpp
 
 2. Run the compiled program:
    ```bash
