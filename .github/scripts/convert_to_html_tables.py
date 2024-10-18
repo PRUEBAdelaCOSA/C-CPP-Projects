@@ -124,7 +124,12 @@ def main():
 		demo_path_output = f'<a href="{demo_path}" title="view the result of {title}">/{REPO_NAME}/{title}/</a>' 
 		if title == 'root' or title == '{init}':
 			demo_path_output = f'<a href="{demo_path}" title="view the result of {title}">/{REPO_NAME}/</a>' 
-		
+		elif title == '{workflows}':
+			demo_path_output = f'<a href="{demo_path}" title="view the result of {title}">/{REPO_NAME}/.github/workflows</a>' 
+		elif title == '{scripts}':
+			demo_path_output = f'<a href="{demo_path}" title="view the result of {title}">/{REPO_NAME}/.github/scripts</a>' 
+		elif title == '{others}':
+			demo_path_output = f'<a href="{demo_path}" title="view the result of {title}">/{REPO_NAME}/.github</a>' 
 
 		# Appending all data together
 		updated_lines.append('\t<tr align="center">\n')
