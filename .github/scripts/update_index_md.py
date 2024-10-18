@@ -121,6 +121,12 @@ def main():
 		demo_path_output = f'[/{REPO_NAME}/{title}/]({demo_path} "view the result of {title}")'
 		if title == 'root' or title == '{init}':
 			demo_path_output = f'[/{REPO_NAME}/]({demo_path} "view the result of {title}")'
+		elif title == '{workflows}':
+			demo_path_output = f'[/{REPO_NAME}/.github/workflows]({demo_path} "view the result of {title}")'
+		elif title == '{scripts}':
+			demo_path_output = f'[/{REPO_NAME}/.github/scripts]({demo_path} "view the result of {title}")'
+		elif title == '{others}':
+			demo_path_output = f'[/{REPO_NAME}/.github]({demo_path} "view the result of {title}")'
 
 		# Appending all data together
 		updated_lines.append(f'| {title} | {contributors_names_output} | {pull_requests_output} | {demo_path_output} |\n')
