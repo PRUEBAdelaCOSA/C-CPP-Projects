@@ -25,4 +25,4 @@ jobs:
             👋 @{{ author }} This PR is closed. If you think there's been a mistake, please contact the maintainer @iamwatchdogs.
 
           pullRequestMerged: |
-            Thank you for contributing @{{ author }}. Make sure to check your contribution on [GitHub Pages](https://grow-with-open-source.github.io/Notebook/ "view contributions").
+            Thank you for contributing @{{ author }}. Make sure to check your contribution on [GitHub Pages](https://grow-with-open-source.github.io/C-CPP-Projects/ "view contributions").
