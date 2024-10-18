@@ -16,5 +16,14 @@
       "3"
     ],
     "demo-path": "Hungry_Serpent"
+  },
+  "{others}": {
+    "contributor-name": [
+      "iamwatchdogs"
+    ],
+    "pull-request-number": [
+      "4"
+    ],
+    "demo-path": "https://github.com/Grow-with-Open-Source/C-CPP-Projects/tree/main/.github"
   }
 }
