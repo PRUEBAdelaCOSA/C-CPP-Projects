@@ -12,6 +12,24 @@ This script requires following environment variables:
 '''
 
 def find_table_points(lines):
+	"""
+	Find table points within a given list of lines.
+
+	The table points are determined by the presence of the markers:
+		<!-- TABLE BEGINS -->
+		<!-- TABLE ENDS -->
+
+	Args:
+		lines (list): List of lines to search in.
+
+	Returns:
+		tuple: A tuple of two integers containing the start and end indices of
+			the table points.
+
+	Raises:
+		SystemExit: If the table markers are not found or if the table end
+			marker appears before the table start marker.
+	"""
 
 	# Setting default return values
 	table_start = None
@@ -42,6 +60,18 @@ def find_table_points(lines):
 
 
 def main():
+	"""
+	Update the index.md file with the latest contributors data.
+
+	This function retrieves the REPO_NAME environment variable and the
+	CONTRIBUTORS_LOG file path. It then reads the log file and extracts the
+	data from it. The function then reads the index.md file and calculates
+	the table points. If the table does not exist, it creates the table
+	header. The function then iterates over the log data and updates the
+	table with the latest data. Finally, it updates the index.md file with
+	the updated data and prints a success message.
+
+	"""
 
 	# Retrieving Environmental variables
 	REPO_NAME = os.environ.get('REPO_NAME')
